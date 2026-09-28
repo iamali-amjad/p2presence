@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Norani — Case Study — P2 Presence</title>
-  <meta name="description" content="How P2 Presence designed, built, and grew Norani on Shopify." />
+  <title>Showpo — Case Study — P2 Presence</title>
+  <meta name="description" content="A Shopify project by P2 Presence for Showpo." />
   <link rel="icon" type="image/png" sizes="512x512" href="favicon-512.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,95 +17,21 @@
     </style>
   </noscript>
   <link rel="stylesheet" href="styles.css?v=6" />
-
   <style>
     .case-gallery-section { padding: 28px 0 30px; }
-    .case-gallery { position: relative; background: #323232; padding: 34px; overflow: hidden; }
-    .case-gallery-header { display: flex; align-items: center; justify-content: flex-end; gap: 24px; margin-bottom: 28px; flex-wrap: wrap; }
-    .case-page-tabs { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
-    .case-tab {
-      background: #111;
-      color: #fff;
-      border: 0;
-      padding: 12px 18px;
-      font-family: "Poppins", sans-serif;
-      font-style: italic;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 1;
-      cursor: pointer;
-      transition: .25s ease;
-    }
-    .case-tab:hover { transform: translateY(-1px); }
-    .case-tab.active { background: #FFC001; color: #14161b; }
-
-    .case-browser {
-      background: #f5f5f5;
-      border-radius: 10px;
-      overflow: hidden;
-      border: 1px solid rgba(0,0,0,.08);
-    }
-    .browser-top {
-      background: #f7f7f7;
-      padding: 14px 24px 8px;
-      display: flex;
-      justify-content: center;
-    }
-    .browser-url {
-      width: min(100%, 760px);
-      height: 22px;
-      border-radius: 6px;
-      background: #e6e6e6;
-      color: #707070;
+    .case-placeholder {
+      aspect-ratio: 16/9;
+      border-radius: 14px;
+      background: linear-gradient(135deg,#21303B,#4E7288);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: .02em;
-    }
-
-    .case-shot-scroll {
-      position: relative;
-      height: 650px;
-      overflow: auto;
-      background: #fff;
-      scrollbar-width: none;
-    }
-    .case-shot-scroll::-webkit-scrollbar { display: none; }
-    .case-shot-scroll img { display: block; width: 100%; height: auto; }
-
-    .hover-scroll-label {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      background: #FFC001;
-      color: #14161b;
-      padding: 16px 24px;
-      font-family: "Poppins", sans-serif;
-      font-style: italic;
+      color: #fff;
+      font-family: var(--display);
       font-weight: 700;
-      font-size: 15px;
-      white-space: nowrap;
-      pointer-events: none;
-      z-index: 2;
-      box-shadow: 0 12px 30px rgba(0,0,0,.18);
-      transition: opacity .25s ease;
-    }
-
-    @media (max-width: 991px) {
-      .case-gallery { padding: 24px 20px; }
-      .case-shot-scroll { height: 520px; }
-      .case-tab { font-size: 14px; padding: 10px 14px; }
-    }
-
-    @media (max-width: 767px) {
-      .case-gallery { padding: 18px 14px; }
-      .case-gallery-header { gap: 18px; margin-bottom: 18px; justify-content: center; }
-      .case-page-tabs { gap: 10px; justify-content: center; }
-      .case-shot-scroll { height: 360px; }
-      .hover-scroll-label { font-size: 13px; padding: 12px 16px; }
+      font-size: 16px;
+      text-align: center;
+      padding: 24px;
     }
   </style>
 </head>
@@ -197,54 +123,19 @@
   <section class="page-hero" id="top">
     <div class="aurora dim" aria-hidden="true"></div>
     <div class="container">
-      <p class="crumbs reveal"><a href="index.html">Home</a> / <a href="work.html">Work</a> / Norani</p>
-      <span class="eyebrow reveal"><span class="pulse"></span> Home & Gifts</span>
-      <h1 class="reveal">Norani</h1>
-      <p class="lead reveal d1">A Shopify project across build, catalog, seo — here's the brief, what we did, and the results.</p>
+      <p class="crumbs reveal"><a href="index.html">Home</a> / <a href="work.html">Work</a> / Showpo</p>
+      <span class="eyebrow reveal"><span class="pulse"></span> Apparel & Footwear</span>
+      <h1 class="reveal">Showpo</h1>
+      <p class="lead reveal d1">Case study details for this project are being finalized and will be added here soon.</p>
       <div class="hero-ctas reveal d2">
         <a class="btn btn-ghost" href="work.html">Back to all work</a>
-      </div>
-      <div class="case-tags reveal d2">
-        <span class="wtag">Build</span>
-        <span class="wtag">Catalog</span>
-        <span class="wtag">SEO</span>
       </div>
     </div>
   </section>
 
   <section class="case-gallery-section">
     <div class="container">
-      <div class="case-gallery reveal">
-        <div class="case-gallery-header">
-          <div class="case-page-tabs">
-            <button class="case-tab active" type="button" data-image="Projects/norani-home.jpg">Home</button>
-            <button class="case-tab" type="button" data-image="Projects/norani-collection.jpg">Collection</button>
-            <button class="case-tab" type="button" data-image="Projects/norani-pdp.jpg">Product</button>
-          </div>
-        </div>
-
-        <div class="case-browser">
-          <div class="browser-top">
-            
-          </div>
-
-          <div class="case-shot-scroll" id="caseShot">
-            <img id="caseStudyImage" src="Projects/norani-home.jpg" alt="Norani homepage" loading="lazy" />
-            <div class="hover-scroll-label">🖱 scroll to explore</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="outcomes-band">
-    <div class="container">
-      <div class="sec-head sm reveal"><span class="kicker">Results achieved</span></div>
-      <div class="oc-grid">
-        <div class="oc reveal"><b>+38%</b><span>checkout starts</span></div>
-        <div class="oc reveal d1"><b>+18%</b><span>conversion</span></div>
-        <div class="oc reveal d2"><b>1.1s</b><span>LCP</span></div>
-      </div>
+      <div class="case-placeholder reveal">Screenshots &amp; project write-up coming soon</div>
     </div>
   </section>
 
@@ -260,43 +151,8 @@
           </span>
           <div>
             <span class="kicker">Project overview</span>
-            <h2>The brief.</h2>
-            <p>Norani is a home & gifts brand with real momentum. They came to us to turn a good product into a store that sells as well as it looks — faster, clearer, and built to grow.</p>
-          </div>
-        </div>
-
-        <div class="case-block">
-          <span class="cb-ic">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#14161B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z"/>
-              <path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/>
-              <path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
-            </svg>
-          </span>
-          <div>
-            <span class="kicker">The challenge</span>
-            <h2>What was holding it back.</h2>
-            <p>A large, seasonal catalog that was hard to merchandise and slow to update, with thin organic visibility.</p>
-          </div>
-        </div>
-
-        <div class="case-block">
-          <span class="cb-ic">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#14161B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M9 18h6"/>
-              <path d="M10 22h4"/>
-              <path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/>
-            </svg>
-          </span>
-          <div>
-            <span class="kicker">Our solution</span>
-            <h2>What we did.</h2>
-            <ul class="deliverables case-sol">
-              <li><span class="dcheck"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#14161B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><span>Rebuilt the storefront on a fast, conversion-first Shopify 2.0 theme.</span></li>
-              <li><span class="dcheck"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#14161B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><span>Streamlined the path to checkout and sharpened product-page storytelling.</span></li>
-              <li><span class="dcheck"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#14161B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><span>Optimized Core Web Vitals so the store stays fast on mobile.</span></li>
-              <li><span class="dcheck"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#14161B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><span>Set up tracking and a testing roadmap to keep improving after launch.</span></li>
-            </ul>
+            <h2>Full write-up coming soon.</h2>
+            <p>We're putting together the full brief, scope, and results for this project — check back shortly, or get in touch for details in the meantime.</p>
           </div>
         </div>
       </div>
@@ -304,10 +160,9 @@
       <aside class="svc-side reveal from-right">
         <h3>Project at a glance</h3>
         <ul class="glance">
-          <li><span>Category</span><b>Home & Gifts</b></li>
-          <li><span>Scope</span><b>Build · Catalog · SEO</b></li>
+          <li><span>Category</span><b>Apparel & Footwear</b></li>
           <li><span>Platform</span><b>Shopify</b></li>
-            </ul>
+        </ul>
         <a class="btn btn-solid mag" href="https://calendly.com/contact-p2presence/30min" target="_blank" rel="noopener" style="width:100%;justify-content:center">Start a project</a>
       </aside>
     </div>
@@ -357,7 +212,7 @@
           <ul>
             <li><a href="#" rel="noopener">LinkedIn</a></li>
             <li><a href="#" rel="noopener">Instagram</a></li>
-                      </ul>
+          </ul>
         </div>
       </div>
 
@@ -369,36 +224,5 @@
   </footer>
 
   <script src="app.js?v=5"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const tabs = document.querySelectorAll(".case-tab");
-      const image = document.getElementById("caseStudyImage");
-      const caseShot = document.getElementById("caseShot");
-      const hoverLabel = document.querySelector(".hover-scroll-label");
-
-      if (!tabs.length || !image || !caseShot) return;
-
-      tabs.forEach((tab) => {
-        tab.addEventListener("click", function () {
-          tabs.forEach((item) => item.classList.remove("active"));
-          this.classList.add("active");
-
-          const newImage = this.getAttribute("data-image");
-          const label = this.textContent.trim();
-
-          image.src = newImage;
-          image.alt = "Norani " + label.toLowerCase() + " page";
-          caseShot.scrollTop = 0;
-
-          if (hoverLabel) hoverLabel.style.opacity = "1";
-        });
-      });
-
-      caseShot.addEventListener("scroll", function () {
-        if (!hoverLabel) return;
-        hoverLabel.style.opacity = caseShot.scrollTop > 40 ? "0" : "1";
-      });
-    });
-  </script>
 </body>
 </html>
